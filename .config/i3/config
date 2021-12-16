@@ -1,7 +1,9 @@
 # i3 config file
 
 floating_modifier $mod
-font pango:monospace 10
+
+# Hide title bar for stacked/tabbed containers
+font pango:DejaVu Sans Mono 0
 
 set $mod Mod1
 set $alt Mod4
@@ -25,7 +27,7 @@ bar {
 	position bottom
 }
 
-gaps inner 8
+gaps inner 5
 gaps outer 0
 
 # start a terminal
@@ -131,6 +133,7 @@ bindsym $mod+e			exec setxkbmap us && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+a	$e $l/audio.sh
 bindsym $mod+n			$term $l/network.sh 
 bindsym $mod+Shift+n	$e $l/net_fix.sh
+bindsym --release Print	$e scrot -s -f -b '%Y:%m:%d:%H:%M:%S.png' -e 'xclip -selection clipboard -t image/png -i $f && mv $f ~/Pictures/Screenshots'
 
 #brightnes
 bindsym XF86MonBrightnessUp	exec sudo light -A 10 && pkill -RTMIN+11 i3blocks

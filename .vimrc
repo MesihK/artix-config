@@ -32,3 +32,6 @@ nnoremap gn :bn<CR>
 nnoremap gl :ls<CR>
 
 set tabstop=4
+set expandtab
+
+au BufRead,BufNewFile *.jinja2 set filetype=htmljinja
