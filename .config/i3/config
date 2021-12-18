@@ -5,8 +5,8 @@ floating_modifier $mod
 # Hide title bar for stacked/tabbed containers
 font pango:DejaVu Sans Mono 0
 
-set $mod Mod1
-set $alt Mod4
+set $mod Mod1 
+set $alt Mod4 
 set $term exec --no-startup-id /usr/local/bin/st
 set $e exec --no-startup-id 
 set $ea exec_always --no-startup-id 
@@ -134,6 +134,7 @@ bindsym $mod+Shift+a	$e $l/audio.sh
 bindsym $mod+n			$term $l/network.sh 
 bindsym $mod+Shift+n	$e $l/net_fix.sh
 bindsym --release Print	$e scrot -s -f -b '%Y:%m:%d:%H:%M:%S.png' -e 'xclip -selection clipboard -t image/png -i $f && mv $f ~/Pictures/Screenshots'
+bindsym $alt+l          exec sudo zzz
 
 #brightnes
 bindsym XF86MonBrightnessUp	exec sudo light -A 10 && pkill -RTMIN+11 i3blocks

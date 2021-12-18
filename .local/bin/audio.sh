@@ -14,7 +14,7 @@ fi
 if [ $audio_mode = "INTERNAL" ]; then
     audio_mode="EXTERNAL"
     #pactl set-card-profile 0 output:$EXTERNAL_OUTPUT
-	pacmd set-default-sink 2
+	pacmd set-default-sink 1
 else
     audio_mode="INTERNAL"
     #pactl set-card-profile 0 output:$INTERNAL_OUTPUT

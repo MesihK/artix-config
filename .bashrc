@@ -20,9 +20,9 @@ alias vs='source ~/.bashrc'
 #iastate vpn stuff
 #put your password to .config/sshp !!!
 alias vpn='openconnect-sso --server vpn.iastate.edu'
-alias sshp='sshpass -f .config/sshp ssh mesih@pronto.las.iastate.edu'
-alias sshd='sshpass -f .config/sshp ssh mesih@prontodtn.las.iastate.edu'
-alias scpp='sshpass -f .config/sshp scp'
+alias sshp='sshpass -f ~/.config/sshp ssh mesih@pronto.las.iastate.edu'
+alias sshd='sshpass -f ~/.config/sshp ssh mesih@prontodtn.las.iastate.edu'
+alias scpp='sshpass -f ~/.config/sshp scp'
 work=mesih@prontodtn.las.iastate.edu:/work/LAS/jernigan-lab/mesih
 
 alias pfamscan='pfam_scan.pl -dir ~/.local/prog/pfam/33.1/ -fasta '
