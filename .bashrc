@@ -27,6 +27,8 @@ work=mesih@prontodtn.las.iastate.edu:/work/LAS/jernigan-lab/mesih
 
 alias pfamscan='pfam_scan.pl -dir ~/.local/prog/pfam/33.1/ -fasta '
 alias cseq='conda activate /home/mesih/env/seq'
+alias cimp='conda activate /home/mesih/env/imp'
+alias cdock='conda activate /home/mesih/env/dock'
 
 export PATH=$PATH:~/.local/bin
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
