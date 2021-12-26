@@ -29,6 +29,17 @@ alias pfamscan='pfam_scan.pl -dir ~/.local/prog/pfam/33.1/ -fasta '
 alias cseq='conda activate /home/mesih/env/seq'
 alias cimp='conda activate /home/mesih/env/imp'
 alias cdock='conda activate /home/mesih/env/dock'
+alias cdd='conda deactivate'
 
+alias ssho='ssh -i ~/.local/key/ssh-key-2021-12-23.key ubuntu@129.213.52.187'
+export orc='ubuntu@129.213.52.187'
+alias scpo='scp -i ~/.local/key/ssh-key-2021-12-23.key ' 
+
+alias yt-dl480='youtube-dl --external-downloader-args "-a -n 8 " --external-downloader axel -i -f "bestvideo[height<=480]+bestaudio/best[height<=480]" -o "%(title)s.%(ext)s"'
+yt-opus(){
+	youtube-dl --external-downloader-args "-a -n 8 " --external-downloader axel \
+    -i --audio-format opus -f "bestaudio/best" --postprocessor-args \
+	'-threads 4' -x -o "%(title)s.%(ext)s" --download-archive archive.txt "$1"
+}
 export PATH=$PATH:~/.local/bin
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
