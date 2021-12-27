@@ -13,13 +13,14 @@ fi
 
 if [ $audio_mode = "INTERNAL" ]; then
     audio_mode="EXTERNAL"
-	pacmd set-default-sink 1
+	pacmd set-default-sink 0
 elif [ $audio_mode = "EXTERNAL" ]; then
     audio_mode="BLUETOOTH"
 	pacmd set-default-sink 2
 else
+	pacmd set-default-sink 1
     audio_mode="INTERNAL"
-	pacmd set-default-sink 0
 fi
 
 echo "${audio_mode}" > /tmp/audio_mode.dat
+pkill -RTMIN+12 i3blocks

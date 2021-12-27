@@ -25,4 +25,13 @@ else
 	icon="🔉"
 fi
 
-echo "$icon$vol%"
+mode=$(cat /tmp/audio_mode.dat)
+modes='I'
+if [[ $mode == 'EXTERNAL' ]]; then
+    modes='E'
+fi
+if [[ $mode == 'BLUETOOTH' ]]; then
+    modes='B'
+fi
+
+echo "$modes $icon$vol%"
