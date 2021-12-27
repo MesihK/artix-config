@@ -18,6 +18,7 @@ $ea xcompmgr -f
 $e  xrandr --dpi 96
 $e  dunst --conf ~/.config/dunst/dunstrc
 $e  $HOME/.local/bin/net_fix.sh
+$ea pulseaudio
 
 bar {
 	font pango:monospace 10
@@ -132,6 +133,8 @@ bindsym $mod+t			exec setxkbmap tr && pkill -RTMIN+10 i3blocks
 bindsym $mod+e			exec setxkbmap us && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+a	$e $l/audio.sh
 bindsym $mod+n			$term $l/network.sh 
+bindsym $mod+m			$term $l/music.sh 
+bindsym $mod+Shift+m	exec cmus-remote -u
 bindsym $mod+Shift+n	$e $l/net_fix.sh
 bindsym --release Print	$e scrot -s -f -b '%Y:%m:%d:%H:%M:%S.png' -e 'xclip -selection clipboard -t image/png -i $f && mv $f ~/Pictures/Screenshots'
 bindsym $alt+l          exec sudo zzz
