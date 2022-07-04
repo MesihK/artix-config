@@ -136,6 +136,8 @@ bindsym $mod+n			$term $l/network.sh
 bindsym $mod+m			$term $l/music.sh 
 bindsym $mod+Shift+m	exec cmus-remote -u
 bindsym $mod+Shift+n	$e $l/net_fix.sh
+bindsym $mod+Shift+s    $e "python ~/edu/tracker/track.py -c '/home/mesih/edu/tracker/tracker.csv' -s -S 9"
+bindsym $mod+Shift+d    $e "python ~/edu/tracker/track.py -c '/home/mesih/edu/tracker/tracker.csv' -d -S 9"
 bindsym --release Print	$e scrot -s -f -b '%Y:%m:%d:%H:%M:%S.png' -e 'xclip -selection clipboard -t image/png -i $f && mv $f ~/Pictures/Screenshots'
 bindsym $alt+l          exec sudo zzz
 

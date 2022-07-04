@@ -5,6 +5,12 @@ command=~/.local/bin/i3blocks/$BLOCK_NAME
 separator_block_width=5
 markup=pango
 
+[Tracker]
+label=<span color="#55aa55"> </span>
+signal=9
+command=~/.local/bin/i3blocks/track.sh
+interval=30
+
 [namaz]
 command=~/.local/bin/namaz.sh
 interval=60
