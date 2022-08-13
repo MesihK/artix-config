@@ -127,7 +127,7 @@ bindsym $mod+Shift+i	$e "bash ~/.local/bin/i3resize up"
 bindsym $mod+Shift+o	$e "bash ~/.local/bin/i3resize right"
 
 # programs
-bindsym $alt+Return		exec /usr/bin/chromium
+bindsym $alt+Return		exec /usr/bin/google-chrome-stable
 bindsym $mod+p			$e $l/monitor.sh
 bindsym $mod+t			exec setxkbmap tr && pkill -RTMIN+10 i3blocks
 bindsym $mod+e			exec setxkbmap us && pkill -RTMIN+10 i3blocks

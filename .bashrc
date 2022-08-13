@@ -17,6 +17,7 @@ alias v3b='vim ~/.config/i3blocks/config'
 alias vb='vim ~/.bashrc'
 alias vv='vim ~/.vimrc'
 alias vs='source ~/.bashrc'
+alias vt='vim ~/edu/tracker/tracker.csv'
 
 #iastate vpn stuff
 #put your password to .config/sshp !!!
@@ -38,6 +39,7 @@ alias cesm='conda activate /home/mesih/env/esm'
 alias cj='conda activate /home/mesih/env/jpy'
 alias cf='conda activate /home/mesih/env/flask'
 alias ce='conda activate /home/mesih/env/edu'
+alias cv='conda activate /home/mesih/env/vue'
 alias cpm='conda activate /home/mesih/env/pymol'
 alias cdd='conda deactivate'
 
@@ -48,6 +50,10 @@ alias cdd='conda deactivate'
 alias ssho='ssh -i ~/.local/key/ssh-key-2022-02-10.key ubuntu@150.136.169.1'
 export orc='ubuntu@150.136.169.1:/home/ubuntu/'
 alias scpo='scp -i ~/.local/key/ssh-key-2022-02-10.key '
+
+alias ssho2='ssh -i ~/.local/key/ssh-key-2022-08-01.key ubuntu@129.213.125.244'
+export orc2='ubuntu@129.213.125.244:/home/ubuntu/'
+alias scpo2='scp -i ~/.local/key/ssh-key-2022-08-01.key '
 
 alias sshy='ssh -i ~/.local/key/ssh-key-2022-02-16.key ubuntu@150.136.104.215'
 export orcy='ubuntu@150.136.104.215:/home/ubuntu/'

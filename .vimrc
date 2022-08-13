@@ -31,7 +31,13 @@ nnoremap gb :bp<CR>
 nnoremap gn :bn<CR>
 nnoremap gl :ls<CR>
 
+filetype plugin indent on
 set tabstop=4
+set shiftwidth=4
 set expandtab
+au FileWritePre *.py retab 
 
 au BufRead,BufNewFile *.jinja2 set filetype=htmljinja
+
+"copy contents to clipboard in visual mode with \y
+vnoremap <silent><Leader>y "yy <Bar> :call system('xclip -selection clipboard', @y)<CR>

@@ -1,12 +1,12 @@
 #!/bin/sh
 
-TASKS='Okul,Lab,BTE,Asist'
-CSV='/home/mesih/prog/tracker/tracker.csv'
+TASKS='Class,Lab,Writing,LitReview,RCoding,Research'
+CSV='/home/mesih/edu/tracker/tracker.csv'
 WEEK=$(date +%W)
 PWEEK=$(echo "$(date +%W)-1" | bc -l)
-T=~/prog/tracker/track.py
-#full performance if worked 5:30h=330m in a working day
-FULL=360
+T=~/edu/tracker/track.py
+#full performance if worked 4:00h=240m in a working day
+FULL=240
 
 case $BLOCK_BUTTON in
 	1) notify-send 'Track Report' "$(date +%D)
